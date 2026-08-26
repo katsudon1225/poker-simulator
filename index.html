@@ -248,7 +248,7 @@ function updateUI(){
       <tr>
         <td>${name}</td>
         <td>${c.toLocaleString()}</td>
-        <td>${p.toFixed(4)}%</td>
+        <td>${p.toFixed(6)}%</td>
         <td><div class="bar-wrap"><div class="bar" style="width:${Math.min(p,100)}%"></div></div></td>
       </tr>`;
   });
@@ -262,9 +262,9 @@ function updateUI(){
     comparison.innerHTML += `
       <tr>
         <td>${name}</td>
-        <td>${p.toFixed(4)}%</td>
-        <td>${theory[name].toFixed(4)}%</td>
-        <td>${diff>=0?"+":""}${diff.toFixed(4)}%</td>
+        <td>${p.toFixed(6)}%</td>
+        <td>${theory[name].toFixed(6)}%</td>
+        <td>${diff>=0?"+":""}${diff.toFixed(6)}%</td>
       </tr>`;
   });
 
